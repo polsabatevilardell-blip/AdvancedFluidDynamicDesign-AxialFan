@@ -1,0 +1,64 @@
+# C1 Simscale and first simulation
+
+## Introduction. What is [Simscale](https://www.simscale.com)?
+
+[Simscale](https://en.wikipedia.org/wiki/SimScale) is a web-based CAE 
+platform.
+
+One of the services of this platform is the possibility to perform CFD simulations. They are based on [OpenFOAM](https://openfoam.org/) but
+offering a more friendly GUI. 
+It is not free, but the UPC has a [educational plan](https://serveistic.upc.edu/ca/distsoft/el-servei/programari-per-a-estudiantsi-professors#autotoc-item-autotoc-11) that allows the 
+access to some useful capabilities:
+
+- Private projects
+- 2000 core hours per student
+- Unlimited parallel simulations
+
+## Learning objectives
+
+1. Become familiar with **Simscale** platform and its CFD capabilities
+2. Understand the concept of **Fluid Flow Region** and how to define it for a turbomachine
+3. Learn how to set up a **Rotating Zone** in a turbomachine
+4. Run a first **incompressible CFD simulation** and inspect the results
+  
+## Creating an account in Simscale
+
+Just sign-in in the platform with the **institutional UPC email** to 
+have access to our educational plan
+
+## Introduction to the Simscale platform
+
+In order to become familiar with CFD in Simscale,
+
+1. Read the basic information about Incompressible Fluid Flow in [this brief article](https://www.simscale.com/docs/analysis-types/incompressible-fluid-flow-analysis/).
+2. Read this article on [CFD on Turbomachinery](https://www.simscale.com/docs/simwiki/cfd-computational-fluid-dynamics/what-is-turbomachinery/) (Skip the FEA part)
+3. Perform this [tutorial of a centrifugal water pump](https://www.simscale.com/docs/tutorials/incompressible-flow-in-centrifugal-pumps/). It is interesting because it introduces important topics
+   - Creating the _Flow Region_ (note that it is just **the opposite of the solid region**)
+   - Creating a [Rotating Zone](https://www.simscale.com/docs/simulation-setup/advanced-concepts/rotating-zones/), important to simulate the rotation of the rotor of the turbomachine.
+
+
+## Tasks
+
+- [ ] Create an account in Simscale with the institutional UPC email
+- [ ] Read the two introductory articles on incompressible flow and turbomachinery CFD
+- [ ] Complete the **centrifugal pump tutorial** and take some screenshots of results and residuals
+  
+## Some simple questions
+
+In order to define a flow region there are two options in Simscale: MRF and AMI. 
+
+What are the main differences? 
+
+
+
+What do you think we are going to use and why?
+
+We are going to use MRF because is much more less expensive in terms of computational cost and the accuracy is not that worse.
+
+What are the main boundary conditions in the centrifugal pump? Which one do we change in order to compute performance curve?
+
+___
+
+What type of flow is assumed in an incompressible simulation? Is this a valid assumption for an axial fan? Why?
+
+___
