@@ -189,6 +189,9 @@ def analyze_airfoil_performance(airfoil_data, Re=500000):
 
     print(f"Design angle of attack: {design_alpha:.2f}°")
     print(f"CL at design alpha: {np.interp(design_alpha, alpha_range, CL_values):.3f}")
+    print(f"CD at design alpha: {np.interp(design_alpha, alpha_range, CD_values):.3f}")
+    print(f"CL/CD at design alpha: {np.interp(design_alpha, alpha_range, np.array(CL_values)/np.array(CD_values)):.3f}")
+
 
     return design_alpha
 
@@ -197,7 +200,7 @@ def export_onshape_profile(profile, filename=None):
     Export the aerodynamic profile to CSV file to use with Onshape (or any other CAD software).
 
     Input:
-    - profile: Dictionary with nomralized coordinates abd name
+    - profile: Dictionary with normalized coordinates and name
     - filename: name for output file. If 'None', the filename is defined with the profile name. It has to have extension .csv
     """
     import csv

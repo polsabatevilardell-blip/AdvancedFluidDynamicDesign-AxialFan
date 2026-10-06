@@ -1,0 +1,6 @@
+station_id,radius_mm,chord_mm,beta_m_deg,target_cl,thickness_ratio_%,reynolds_number
+1,32,75,41,0.36,12,45700
+2,73,24,62,0.76,11,29000
+3,94,33,63,0.74,10,52600
+4,110,44,62,0.72,9,80000
+5,125,56,61,0.70,8,117000
